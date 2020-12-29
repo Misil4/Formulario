@@ -1,0 +1,13 @@
+.modal-header {
+  border-bottom: none;
+}
+.modal-footer {
+  border-top: none;
+}
+.btn-primary {
+  background-color: #000000;
+}
+#btnSend {
+  background-color: #000000;
+  color: #fff;
+}
