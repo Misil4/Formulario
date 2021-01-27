@@ -2,96 +2,95 @@
 <html lang="en">
 
 <head>
-  <title>BFormulario</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link rel="stylesheet" href="style.css">
+	<title>BFormulario</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modal"
-    aria-hidden="true" data-backdrop="static">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header text-center">
-          <h1><b>Formularioa </b></h1><br>
-          <img src="http://e2p1talde4.aegcloud.pro/wp-content/uploads/2020/12/logo.jpg" width="400px" alt="">
+	<div class="modal fade" id="modalContactForm" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true" data-backdrop="static">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h1><b>Formularioa </b></h1><br>
+          <img src="http://e2p1talde4.aegcloud.pro/wp-content/uploads/2021/01/img_electrodomesticos.jpg" width="400px" alt="">
           <p>Orain galdera batzuk egin nahi dizugu informazioa biltzeko eta hobetzeko:</p>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
-       <form onsubmit="balioztatu()">
-        <div class="modal-body mx-3">
-          <div class="md-form mb-5">
-            <i class="fas fa-user prefix grey-text"></i>
-            <label>1-Zure izena?</label><br>
-            <input type="text" id="izena" required><br><br>
-          </div>
-          <div class="md-form mb-5">
-            <label>2-Zure posta elektronikoa?</label></br>
-            <input type="email" id="posta" required><br><br>
-          </div>
-          <div class="md-form mb-5">
-            <label>3-Ze pertsona kopuru dago zure empresan?</label><br>
-            <input type="radio" name="kopuru" id="kopuru">10 eta 100</input><br>
-            <input type="radio" name="kopuru1" id="kopuru1">100 eta 1000</input><br>
-            <input type="radio" name="kopuru2" id="kopuru2">1000 eta 10000</input><br>
-            <input type="radio" name="kopuru3" id="kopuru3">10000 baino gehiago</input><br><br>
-          </div>
-          <div class="md-form mb-5">
-            <label>4-Arropa interesatzen zaizu?</label><br>
-            <input type="radio" name="erantzun" id="erantzun" >Bai</input>
-            <p>
-              <input type="radio"  name="erantzun" id="erantzun1">Ez</input><br>
-          </div>
-          <div class="md-form mb-5">
-            <input type="hidden" id="select"></input>
-            <label>5-Ze arropa tipo?</label></br>
-            <select id="parte" disabled="disabled">
-              <option>Goiko parteko arropa(alkandorak,kamisetak,etab)</option>
-              <option>Beheko parte arropa(galtzak,gona,etab)</option>
-            </select><br><br>
-          </div>
+        <form>
+          <div class="modal-body mx-3">
             <div class="md-form mb-5">
-              <label>6-Ze arropa marka gustatzen zaizu?</label><br>
-              <input type="radio" name="radio" id="marka">Mango</input><br>
-              <input type="radio" name="radio" id="marka1">Pull & Bear</input><br>
-              <input type="radio" name="radio" id="marka2">Stradivarius</input><br>
-              <input type="radio" name="radio" id="marka3">Zara</input><br><br>
+              <i class="fas fa-user prefix grey-text"></i>
+              <label>1-Izena?</label><br>
+              <input type="text" id="izena" required><br><br>
             </div>
             <div class="md-form mb-5">
-              <label>7-Bezeroek, batez beste, zenbat diru gastatzen dute zure dendan erosketa bakoitzetan?</label><br>
-              <input type="radio" name="diru" id="diru">10 euro eta 50 euro artean</input><br>
-              <input type="radio" name="diru" id="diru1">50 euro eta 100 euro artean</input><br>
-              <input type="radio" name="diru" id="diru2">100 euro eta 200 euro artean</input><br>
-              <input type="radio" name="diru" id="diru3">200 euro baino gehiago</input>
+              <i class="fas fa-envelope"></i>
+              <label>2-Posta elektronikoa?</label></br>
+              <input type="email" id="posta" required><br><br>
             </div>
             <div class="md-form mb-5">
-              <input type="hidden" name="hidden"></input><br>
-              <label>8-Zure ustez emakumeak ala gizonak gastatzen dute gehiago arropan?</label><br>
-              <select id="gastatu" disabled="disabled">
-                <option>Emakumeak</option><br>
-                <option>Gizonak</option>
-              </select>
+              <i class="fas fa-mobile-alt"></i>
+              <label>3-¿Mugikorra zenbakia?</label><br>
+              <input type="tel" id="telefonoa">
             </div><br>
             <div class="md-form mb-5">
-              <label>9-Zure dendan bikotekide programa bat ahal duzu?</label><br>
-              <input type="radio" name="bikote" id="bai">Bai</input><br>
-              <input type="radio" name="bikote" id="ez">Ez</input>
+              <label>4-Zure helbidea?</label><br>
+              <i class="fas fa-tshirt"></i>
+            <input type="text"  id="helbidea"><br><br>
+            </div>
+            <div class="md-form mb-5">
+              <input type="hidden" id="select">
+              <i class="fas fa-calendar-alt"></i>
+              <label>5-Nola eskatu zerbitzua etxean? </label></br>
+              <input type="radio" name="berme" id="berme">Posta elektronikoa/telefonoz/tailerrera hurbildu</input><br>
+              <input type="radio" name="berme" id="berme1">telefonoz/tailerrera hurbildu/web-an</input><br>
+              <input type="radio" name="berme" id="berme2">Posta elektronikoa/posta/telefonoa</input><br>
             </div><br>
-            <label>10-Zerbait gehiago badaukezu esateko, hemen jarri</label><br>
-            <textarea id="testua" rows="3" cols="30"></textarea>
+            <div class="md-form mb-5">
+              <i class="fas fa-building"></i>
+              <label>6- Izan daiteke zure etxetresna elektrikoa tailerrera eramateko kasuren bat?</label><br>
+              <input type="radio" name="pieza" id="pieza">Bai</input><br>
+              <input type="radio" name="pieza" id="pieza1">Ez</input><br><br>
+            </div>
+            <div class="md-form mb-5">
+               <i class="fas fa-euro-sign"></i>
+              <label>7-Zein da kide garen marka eta gure espezialitatea?</label><br>
+              <input type="radio" name="konponketa" id="konponketa">LG</input><br>
+              <input type="radio" name="konponketa" id="konponketa1">Samsung</input><br>
+               <input type="radio" name="konponketa" id="konponketa2">Bosch</input><br>
+            </div><br>
+            <div class="md-form mb-5">
+               <i class="fas fa-user-friends"></i>
+              <label>8-Zein tresna ditu zerbitzuak egiteko?</label><br>
+             <input type="radio" name="marka" id="marka">-Eramangarria, Smartphone, Tresnak</input><br>
+              <input type="radio" name="marka" id="marka1">Smartphone,herramientas</input><br>
+              <input type="radio" name="marka" id="marka2">Smartphone, tresnak</input><br>
+            </div><br>
+            <div class="md-form mb-5">
+              <label>9-Cuándo se comenzará a trabajar en el servicio?</label><br>
+              <input type="radio" name="bikote" id="bai">bezeroak aurrekontuari oniritzia ematen dionean</input><br>
+              <input type="radio" name="bikote" id="bikote">bezeroak seinale bat ordaintzen duenean</input>
+              <input type="radio" name="bikote" id="bikote1">etxetresna elektrikoa berrikusi eta berehala</input>
+            </div><br>
+            <label>10-Zerbait gehiago badaukazu esateko, hemen jarri</label><br>
+            <textarea id="testua" rows="1" cols="30"></textarea>
           </div><br>
-            <div class="modal-footer d-flex justify-content-center">
-              <input class="btn btn-primary" type="reset" value="Ezabatu"></input>
-              <input class="=btn btn-primary" type="submit" value="Bidali"></input>
-              </form>
-            </div>
+          <div class="modal-footer d-flex justify-content-center">
+            <button type="button" class="btn" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">ITXI FORMULARIOA</span> </button>
+            <button type="reset" class="btn">EZABATU</button>
+            <button onclick="balioztatu()" type="button" class="btn">
+              BIDALI </button>
           </div>
-        </div>
+        </form>
       </div>
+    </div>
+  </div>
   <div class="text-center">
     <a href="" class="btn btn-default btn-rounded mb-4" data-toggle="modal" data-target="#modalContactForm">Formularioa
       bete</a>
